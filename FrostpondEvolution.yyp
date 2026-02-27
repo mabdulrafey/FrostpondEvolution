@@ -35,13 +35,14 @@
   },
   "name":"FrostpondEvolution",
   "resources":[
-    {"id":{"name":"rm_Pond","path":"rooms/rm_Pond/rm_Pond.yy",},},
+    {"id":{"name":"rm_Pond1","path":"rooms/rm_Pond1/rm_Pond1.yy",},},
     {"id":{"name":"spr_Pond1","path":"sprites/spr_Pond1/spr_Pond1.yy",},},
+    {"id":{"name":"tile_Pond1","path":"tilesets/tile_Pond1/tile_Pond1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_Pond","path":"rooms/rm_Pond/rm_Pond.yy",},},
+    {"roomId":{"name":"rm_Pond1","path":"rooms/rm_Pond1/rm_Pond1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
