@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -31,11 +31,15 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"FrostpondEvolution",
   "resources":[
+    {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_ice_placeholder","path":"sprites/spr_ice_placeholder/spr_ice_placeholder.yy",},},
+    {"id":{"name":"spr_player_placeholder","path":"sprites/spr_player_placeholder/spr_player_placeholder.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
