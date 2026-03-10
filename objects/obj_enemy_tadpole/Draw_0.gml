@@ -1,5 +1,5 @@
-// Calculating the offset of the hop using sin, for a nice looking up and down hop cycle
-var hop_offset = abs(sin(hop_timer)) * hop_height // Amplifying it with hop_height
+ // Calculating the offset of the hop using sin, for a nice looking hop cycle
+var hop_offset = abs(sin(hop_timer)) * hop_height
 
 // This will draw the player higher depending on the hop-offset,
 // creating the illusion that they are hopping
