@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_player_damaged",
+  "%Name":"scr_damage",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_player_damaged",
+  "name":"scr_damage",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

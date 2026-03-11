@@ -42,3 +42,8 @@ with (obj_enemy_tadpole) { // Runs this code once for very existing enemy frog
         }
     }
 }
+
+// Reducing the iframes cooldown every step
+if (iframes_cooldown > 0) {
+	iframes_cooldown--
+}
