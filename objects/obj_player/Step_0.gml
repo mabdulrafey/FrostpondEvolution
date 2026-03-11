@@ -1,21 +1,38 @@
-// Setting hspeed and vspeed to zero if the player isn't holding anything
-hspeed = 0
-vspeed = 0
+//Speed acceleration and decceleration
+//x
+x += hspeed;
+if (hspeed > 0) {
+    hspeed -= move_deceleration;
+} else if (hspeed < 0) {
+    hspeed += move_deceleration;
+}
+
+//y
+y += vspeed
+if (vspeed > 0) {
+    vspeed -= move_deceleration;
+} else if (vspeed < 0) {
+    vspeed += move_deceleration;
+}
 
 
-// Player movement
-if (keyboard_check(vk_right)) {
-	hspeed = move_speed
+// Player input/movement
+if keyboard_check(vk_left) {
+    hspeed -= move_acceleration;
 }
-if (keyboard_check(vk_left)) {
-	hspeed = -move_speed
+if keyboard_check(vk_right) {
+    hspeed += move_acceleration;
 }
-if (keyboard_check(vk_up)) {
-	vspeed = -move_speed
+if keyboard_check(vk_up) {
+    vspeed -= move_acceleration;
 }
-if (keyboard_check(vk_down)) {
-	vspeed = move_speed
+if keyboard_check(vk_down) {
+    vspeed += move_acceleration;
 }
+
+// Keeps the player within screen bounds
+x = clamp(x, sprite_width / 2, room_width-sprite_width / 2)
+y = clamp(y, sprite_height / 2, room_height-sprite_height / 2)
 
 // Checking if the player is moving
 var moving = (hspeed != 0) || (vspeed != 0)
@@ -27,18 +44,19 @@ if (moving) {
 	// Restricting the classic gamemaker problem of diagonal movement being a little faster
 	// Calculating current speed by measuring distance between (0,0) and (hspeed,vspeed)
 	var current_speed = point_distance(0, 0, hspeed, vspeed)
-	if (current_speed > move_speed) {
-		hspeed = lengthdir_x(move_speed, image_angle)
-		vspeed = lengthdir_y(move_speed, image_angle)
+	if (current_speed > top_speed) {
+		hspeed = lengthdir_x(top_speed, image_angle)
+		vspeed = lengthdir_y(top_speed, image_angle)
 	}
 	
+	//Commented for the sake of playtesting. Do we still want to include this animation?
 	// Player animation begins when moving
-	hop_timer += hop_speed 
+	/*hop_timer += hop_speed 
 	// Dividing by pie to better match the timing of the sin wave when switching sprite frames
 	image_speed = 2 * hop_speed / pi // Multiply by the amount of frames in the animation (2 in this case)
 } else { 
 	image_speed = 0
-	hop_timer = 0
+	hop_timer = 0*/
 } 
 
 // Keeps the player within screen bounds
