@@ -1,27 +1,22 @@
-// Extending state for tongue
-if (state == "extend") {
+// Logic for moving out and coming back
+if (state == "extending") {
+    tongue_length += extend_speed;
     
-    tongue_length += extend_speed
-    
-	// Once tongue has reached its range, switch states to retracting
+    // Switch to retracting once it hits the range you set in Variable Definitions
     if (tongue_length >= tongue_range) {
-        state = "retracting"
+        state = "retracting";
     }
-}
-
+} 
 else if (state == "retracting") {
+    tongue_length -= extend_speed;
     
-    tongue_length -= extend_speed
-    
+    // Destroy once it's fully back at the player
     if (tongue_length <= 0) {
-        instance_destroy()
+        instance_destroy();
     }
 }
 
-// Having to do this to prevent division by 0, NOT WORKING YET
-//if (sprite_get_width(sprite_index) > 0) {
-	// Visually stretching the tongue sprite using xscale and yscale
-	//image_xscale = tongue_length / sprite_get_width(sprite_index)
-	//image_yscale = 2
-//}
-
+// Visual stretch logic
+if (sprite_width > 0) {
+    image_xscale = tongue_length / sprite_get_width(sprite_index);
+}

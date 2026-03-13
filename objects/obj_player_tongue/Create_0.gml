@@ -1,7 +1,7 @@
-direction = image_angle
 
-// Controlling the extending and retracting of the tongue
-state = "extending"
+direction = image_angle;
+image_angle = direction;
 
-tongue_length = 1
-tongue_extending_speed = 20
+state = "extending";
+tongue_length = 0;
+extend_speed = 15;

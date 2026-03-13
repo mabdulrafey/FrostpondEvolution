@@ -31,7 +31,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"move_acceleration","filters":[],"listItems":[],"multiselect":false,"name":"move_acceleration","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":".2","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"move_acceleration","filters":[],"listItems":[],"multiselect":false,"name":"move_acceleration","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":".4","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"hop_timer","filters":[],"listItems":[],"multiselect":false,"name":"hop_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"hop_speed","filters":[],"listItems":[],"multiselect":false,"name":"hop_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.15","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"hop_height","filters":[],"listItems":[],"multiselect":false,"name":"hop_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":1,},
@@ -47,7 +47,7 @@
     {"$GMObjectProperty":"v2","%Name":"iframes_cooldown","filters":[],"listItems":[],"multiselect":false,"name":"iframes_cooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"iframes_max_cooldown","filters":[],"listItems":[],"multiselect":false,"name":"iframes_max_cooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"4","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"move_deceleration","filters":[],"listItems":[],"multiselect":false,"name":"move_deceleration","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":".1","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"top_speed","filters":[],"listItems":[],"multiselect":false,"name":"top_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"top_speed","filters":[],"listItems":[],"multiselect":false,"name":"top_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
