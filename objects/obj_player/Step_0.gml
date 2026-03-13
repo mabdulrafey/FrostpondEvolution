@@ -1,20 +1,29 @@
 //Speed acceleration and decceleration
 //x
 x += hspeed;
-if (hspeed > 0) {
-    hspeed -= move_deceleration;
-} else if (hspeed < 0) {
-    hspeed += move_deceleration;
+//Making sure the player is not moving before decelerating hspeed
+if (keyboard_check(vk_right) - keyboard_check(vk_left) == 0) {
+	if (hspeed > 0) {
+	    hspeed -= move_deceleration;
+	} else if (hspeed < 0) {
+	    hspeed += move_deceleration;
+	}
 }
 
 //y
 y += vspeed
-if (vspeed > 0) {
-    vspeed -= move_deceleration;
-} else if (vspeed < 0) {
-    vspeed += move_deceleration;
+//Making sure the player is not moving before decelerating vspeed
+if (keyboard_check(vk_down) - keyboard_check(vk_up) == 0) {
+	if (vspeed > 0) {
+	    vspeed -= move_deceleration;
+	} else if (vspeed < 0) {
+	    vspeed += move_deceleration;
+	}
 }
 
+// Any speeds below 0.2 will be set to 0 to prevent the player object image angle freaking out
+if (abs(hspeed) < move_deceleration) hspeed = 0;
+if (abs(vspeed) < move_deceleration) vspeed = 0;
 
 // Player input/movement
 if keyboard_check(vk_left) {
@@ -29,10 +38,6 @@ if keyboard_check(vk_up) {
 if keyboard_check(vk_down) {
     vspeed += move_acceleration;
 }
-
-// Keeps the player within screen bounds
-x = clamp(x, sprite_width / 2, room_width-sprite_width / 2)
-y = clamp(y, sprite_height / 2, room_height-sprite_height / 2)
 
 // Checking if the player is moving
 var moving = (hspeed != 0) || (vspeed != 0)
@@ -67,4 +72,3 @@ y = clamp(y, sprite_height / 2, room_height-sprite_height / 2)
 if (iframes_cooldown > 0) {
 	iframes_cooldown--
 }
-
