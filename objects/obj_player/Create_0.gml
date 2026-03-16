@@ -2,6 +2,10 @@
 hp = 200
 max_hp = 200
 
+
+evolution_message = "";
+evolution_timer = 0;
+
 // Player animation will not play while they are still
 image_speed = 0
 
