@@ -58,6 +58,7 @@
     {"id":{"name":"spr_enemy_frog","path":"sprites/spr_enemy_frog/spr_enemy_frog.yy",},},
     {"id":{"name":"spr_enemy_projectile","path":"sprites/spr_enemy_projectile/spr_enemy_projectile.yy",},},
     {"id":{"name":"spr_ice_placeholder","path":"sprites/spr_ice_placeholder/spr_ice_placeholder.yy",},},
+    {"id":{"name":"spr_player_frog","path":"sprites/spr_player_frog/spr_player_frog.yy",},},
     {"id":{"name":"spr_player_legs","path":"sprites/spr_player_legs/spr_player_legs.yy",},},
     {"id":{"name":"spr_player_spit","path":"sprites/spr_player_spit/spr_player_spit.yy",},},
     {"id":{"name":"spr_player_tongue","path":"sprites/spr_player_tongue/spr_player_tongue.yy",},},

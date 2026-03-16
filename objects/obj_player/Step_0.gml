@@ -92,8 +92,7 @@ if (evolution_timer > 0) {
 } else {
 	evolution_message = ""; 
 }
-
-/* // Example Stage 2: Evolve to Frog at 300 points
+ // Example Stage 2: Evolve to Frog at 300 points
 if (obj_waves.score_total >= 300 && evolve == 1) {
 	evolve = 2;
 	sprite_index = spr_player_frog;
@@ -103,4 +102,3 @@ if (obj_waves.score_total >= 300 && evolve == 1) {
 	
 	show_debug_message("Evolved to Stage 2!");
 }
-*/
