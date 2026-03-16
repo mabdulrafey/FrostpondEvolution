@@ -54,14 +54,13 @@ if (moving) {
 		vspeed = lengthdir_y(top_speed, image_angle)
 	}
 	
-	//Commented for the sake of playtesting. Do we still want to include this animation?
 	// Player animation begins when moving
-	/*hop_timer += hop_speed 
-	// Dividing by pie to better match the timing of the sin wave when switching sprite frames
-	image_speed = 2 * hop_speed / pi // Multiply by the amount of frames in the animation (2 in this case)
+	// Using the hop_speed from your Variable Definitions to control the swim/walk speed
+	image_speed = hop_speed; 
 } else { 
+	// Stop animation and reset to the first frame when still
 	image_speed = 0
-	hop_timer = 0*/
+	image_index = 0
 } 
 
 // Keeps the player within screen bounds

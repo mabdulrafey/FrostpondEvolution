@@ -1,5 +1,12 @@
-// When colliding with an enemy object, inflict 10 damage
-inflict_damage(other, spit_damage)
+// Use 'other' to grab the value from the specific enemy we hit
+if (instance_exists(obj_waves)) {
+    obj_waves.score_total += other.my_value;
+}
 
-// Destroy the player spit
-instance_destroy()
+// Destroy the spit
+instance_destroy();
+
+// Destroy the enemy
+with(other) {
+    instance_destroy();
+}

@@ -16,7 +16,8 @@ if (enemy != noone) { // Checking if enemy recieves a prop er enemy id
 		if (abs(angle_difference(image_angle, angle_to_enemy)) < 90) {
 			var spit = instance_create_layer(x, y, "Instances", obj_player_spit)
 			spit.direction = angle_to_enemy
-			spit.speed = spit_speed 
+			spit.speed = spit_speed
+			spit.image_angle = spit.direction
 		}
 		
 	}
