@@ -18,7 +18,10 @@ if (!instance_exists(obj_enemy) && alarm[0] <= 0) {
 // Levels up the player everytime a threshold is passed
 // then moves the threshold further
 if (experience >= level_up_threshold) {
-	if (level >= 10) {
+	upgrading = true
+	instance_create_layer(0, 0, 0, obj_upgrade)
+	
+	if (level <= 10) {
 		level_up_threshold += level_up_threshold;
 		level_up_threshold += 10;
 	} else {
