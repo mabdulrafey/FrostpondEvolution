@@ -3,7 +3,7 @@ alarm[1] = tongue_cooldown
 
 // --- EVOLUTION CHECK ---
 // Only run the search and attack logic if the player has evolved
-if (evolve >= 1) {
+if (obj_waves.level >= 5) {
 
     // Searching for the nearest enemy to the player
     var enemy = instance_nearest(x, y, obj_enemy)

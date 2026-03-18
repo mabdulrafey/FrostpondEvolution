@@ -15,3 +15,14 @@ if (!instance_exists(obj_enemy) && alarm[0] <= 0) {
     alarm[0] = game_get_speed(gamespeed_fps) * 5; 
 }
 
+// Levels up the player everytime a threshold is passed
+// then moves the threshold further
+if (experience >= level_up_threshold) {
+	if (level >= 10) {
+		level_up_threshold += level_up_threshold;
+		level_up_threshold += 10;
+	} else {
+		level_up_threshold *= 1.1;
+	}
+	level++;
+}
