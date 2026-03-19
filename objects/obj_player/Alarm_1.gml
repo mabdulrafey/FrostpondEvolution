@@ -14,8 +14,9 @@ if (evolve >= 1) {
         if (distance_to_enemy <= tongue_range) {
             var angle_to_enemy = point_direction(x, y, enemy.x, enemy.y)
             
-            // Checking if the enemy is in a 30 degree cone in front of the player
-            if (abs(angle_difference(image_angle, angle_to_enemy)) < 30) {
+            // Checking if the enemy is in a 60 degree cone in front of the player
+			// Not needed though when doing omni-directional hits
+            // (abs(angle_difference(image_angle, angle_to_enemy)) < 60) {
                 
                 // Making sure the tongue attack isn't already active
                 if (instance_exists(obj_player_tongue) == false) {
@@ -23,14 +24,18 @@ if (evolve >= 1) {
                 
                     tongue.original_x = x
                     tongue.original_y = y
-                    tongue.direction = image_angle
-                    tongue.image_angle = image_angle
+					
+					// Storing the enemy and making the tongue shoots towards the enemy
+					tongue.enemy_angle = angle_to_enemy
+					tongue.direction = angle_to_enemy
+					tongue.image_angle = angle_to_enemy
+
 
                     tongue.tongue_range = tongue_range + tongue_range_upgrade
                     tongue.tongue_punch_through = tongue_punch_through + tongue_punch_through_upgrade
                     tongue.tongue_damage = tongue_damage + tongue_damage_upgrade
                 }
-            }
+            //}
         }
     }
 }
