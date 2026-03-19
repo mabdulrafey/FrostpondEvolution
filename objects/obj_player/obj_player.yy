@@ -14,8 +14,8 @@
   "name":"obj_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,8 +34,9 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"move_acceleration","filters":[],"listItems":[],"multiselect":false,"name":"move_acceleration","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":".2","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"hop_timer","filters":[],"listItems":[],"multiselect":false,"name":"hop_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
-    {"$GMObjectProperty":"v2","%Name":"hop_speed","filters":[],"listItems":[],"multiselect":false,"name":"hop_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.15","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"hop_speed","filters":[],"listItems":[],"multiselect":false,"name":"hop_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.25","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"hop_height","filters":[],"listItems":[],"multiselect":false,"name":"hop_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"hop_duration","filters":[],"listItems":[],"multiselect":false,"name":"hop_duration","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"spit_range","filters":[],"listItems":[],"multiselect":false,"name":"spit_range","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1000","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"spit_range_upgrade","filters":[],"listItems":[],"multiselect":false,"name":"spit_range_upgrade","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"spit_speed","filters":[],"listItems":[],"multiselect":false,"name":"spit_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":1,},

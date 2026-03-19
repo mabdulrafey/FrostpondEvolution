@@ -15,5 +15,9 @@ if (other.hp <= 0) {
     }
 }
 
-// 3. Destroy the spit projectile (since it hit something)
+// 3. Creates the particle system for visually displaying an enemy got hit
+part_particles_create(global.particle_system, x, y, global.pt_player_spit, 15);
+
+// 4. Destroy the spit projectile (since it hit something)
 instance_destroy();
+
