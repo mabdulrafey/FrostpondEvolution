@@ -12,5 +12,3 @@ enum game_states {
 }
 
 global.game_state = game_states.playing;
-
-global.paused = false;

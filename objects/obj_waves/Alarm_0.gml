@@ -1,8 +1,3 @@
-// Checks for upgrading
-if (instance_exists(obj_upgrade)) {
-	exit;	
-}
-
 // --- INFINITE SCALING LOGIC ---
 
 // 1. Basic Tadpoles: Start with 3, add 1 every wave

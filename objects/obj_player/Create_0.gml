@@ -17,3 +17,5 @@ alarm[0] = spit_cooldown
 
 // Starting alarm[1] for the tongue attacks
 alarm[1] = tongue_cooldown
+
+paused = false;
