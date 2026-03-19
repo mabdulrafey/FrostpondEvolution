@@ -1,3 +1,8 @@
+// Checks for upgrading
+if (instance_exists(obj_upgrade)) {
+	exit;	
+}
+
 // --- INFINITE SCALING LOGIC ---
 
 // 1. Basic Tadpoles: Start with 3, add 1 every wave
@@ -21,3 +26,5 @@ if (current_wave >= 4) {
     var flower_count = floor(current_wave / 4); // Adds 1 flower every 4 waves
     scr_spawning(flower_count, obj_enemy_flower, x, x + sprite_width, y, y + sprite_height);
 }
+
+current_wave++;

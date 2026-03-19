@@ -1,3 +1,19 @@
+// Checks for pause
+if (global.game_state != game_states.playing) {
+	if (!global.paused) {
+		base_vspeed = vspeed;
+		base_hspeed = hspeed;
+		vspeed = 0;
+		global.paused = true;
+	}
+	exit;
+} else {
+	if (global.paused) {
+		vspeed = base_vspeed;
+		hspeed = base_hspeed;
+		global.paused = false;
+	}
+}
 // --- MOVEMENT & PHYSICS ---
 
 // Speed acceleration and deceleration

@@ -5,7 +5,7 @@ function scr_spawning(enemies, enemy_type, area_x1, area_x2, area_y1, area_y2) {
 		instance_create_layer(
 		area_x1 + irandom(area_x2 - area_x1), 
 		area_y1 + irandom(area_y2 - area_y1), 
-		0, 
+		"Instances", 
 		enemy_type);
 	}
 }

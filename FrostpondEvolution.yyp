@@ -50,8 +50,10 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_upgrade","path":"objects/obj_upgrade/obj_upgrade.yy",},},
     {"id":{"name":"obj_waves","path":"objects/obj_waves/obj_waves.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"rm_Initialize","path":"rooms/rm_Initialize/rm_Initialize.yy",},},
+    {"id":{"name":"rm_pond","path":"rooms/rm_pond/rm_pond.yy",},},
     {"id":{"name":"scr_damage","path":"scripts/scr_damage/scr_damage.yy",},},
+    {"id":{"name":"scr_pause_game","path":"scripts/scr_pause_game/scr_pause_game.yy",},},
     {"id":{"name":"scr_spawning","path":"scripts/scr_spawning/scr_spawning.yy",},},
     {"id":{"name":"scr_upgrades","path":"scripts/scr_upgrades/scr_upgrades.yy",},},
     {"id":{"name":"spr_enemy_fish","path":"sprites/spr_enemy_fish/spr_enemy_fish.yy",},},
@@ -71,7 +73,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_Initialize","path":"rooms/rm_Initialize/rm_Initialize.yy",},},
+    {"roomId":{"name":"rm_pond","path":"rooms/rm_pond/rm_pond.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

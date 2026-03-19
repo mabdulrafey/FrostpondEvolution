@@ -11,4 +11,5 @@ if (instance_exists(obj_player)) {
 
 // Creating an instance variable for enemy health using the max_hp variable def
 hp = max_hp
-	
+
+paused = false;

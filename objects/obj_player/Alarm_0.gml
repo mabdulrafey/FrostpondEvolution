@@ -1,6 +1,11 @@
 // Resetting alarm 0
 alarm[0] = spit_cooldown
 
+// Checks for upgrading
+if (instance_exists(obj_upgrade)) {
+	exit;	
+}
+
 // Searching for the nearest enemy to the player
 var enemy = instance_nearest(x, y, obj_enemy)
 
