@@ -1,5 +1,5 @@
 if (global.game_state == game_states.playing) {
 		global.game_state = game_states.paused;
-} else if (global.game_state == game_states.paused) {
+} else if (global.game_state == game_states.paused && !instance_exists(obj_upgrade1)) {
 	global.game_state = game_states.playing
 }
