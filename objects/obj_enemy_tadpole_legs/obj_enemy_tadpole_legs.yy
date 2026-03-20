@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_frog_legs",
-    "path":"sprites/spr_enemy_frog_legs/spr_enemy_frog_legs.yy",
+    "name":"spr_enemy_tadpole_legs",
+    "path":"sprites/spr_enemy_tadpole_legs/spr_enemy_tadpole_legs.yy",
   },
   "spriteMaskId":null,
   "visible":true,

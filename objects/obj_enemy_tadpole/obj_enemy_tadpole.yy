@@ -44,8 +44,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_frog",
-    "path":"sprites/spr_enemy_frog/spr_enemy_frog.yy",
+    "name":"spr_enemy_tadpole",
+    "path":"sprites/spr_enemy_tadpole/spr_enemy_tadpole.yy",
   },
   "spriteMaskId":null,
   "visible":true,
