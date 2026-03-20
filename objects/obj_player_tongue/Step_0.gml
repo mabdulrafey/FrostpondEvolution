@@ -5,10 +5,10 @@ if (instance_exists(obj_upgrade1)) {
 
 // Making the tongue object follow the player as they move
 // For the position of the tongue
-x = obj_player.x + lengthdir_x(obj_player.sprite_width / 2, enemy_angle)
-y = obj_player.y + lengthdir_y(obj_player.sprite_width / 2, enemy_angle)
-
-// For the angle of the tongue and keeping it aligned with enemy 
+x = obj_player.x + lengthdir_x(obj_player.sprite_width / 2, direction)
+y = obj_player.y + lengthdir_y(obj_player.sprite_width / 2, direction)
+// For the angle of the tongue
+direction = obj_player.image_angle
 image_angle = direction
 
 // Extending state for tongue

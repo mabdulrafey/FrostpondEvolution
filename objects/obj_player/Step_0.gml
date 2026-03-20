@@ -72,11 +72,12 @@ if (moving) {
 		vspeed = lengthdir_y(top_speed, image_angle);
 	}
 	
+	// Player animation begins when moving
+	image_speed = hop_speed; 
 } else { 
 	// Stop animation and reset to the first frame when still
 	image_speed = 0;
 	image_index = 0;
-	
 } 
 
 // Keeps the player within screen bounds
