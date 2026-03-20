@@ -10,8 +10,8 @@
   "name":"obj_player_tongue",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,7 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"tongue_damage","filters":[],"listItems":[],"multiselect":false,"name":"tongue_damage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"25","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"tongue_punch_through","filters":[],"listItems":[],"multiselect":false,"name":"tongue_punch_through","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
-    {"$GMObjectProperty":"v2","%Name":"tongue_range","filters":[],"listItems":[],"multiselect":false,"name":"tongue_range","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"tongue_range","filters":[],"listItems":[],"multiselect":false,"name":"tongue_range","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"75","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

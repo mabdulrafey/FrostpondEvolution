@@ -10,5 +10,6 @@ tongue_range = obj_player.tongue_range
 state = "extending"
 
 tongue_length = 1 // The length of the tongue begins with 1
-tongue_extending_speed = 5 // Adjust this value to adjust the speed of the tongue attack
+tongue_extending_speed = 12 // Adjust this value to adjust the speed of the tongue attack
+
 
