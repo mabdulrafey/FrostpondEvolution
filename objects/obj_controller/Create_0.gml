@@ -91,6 +91,14 @@ if (instance_exists(obj_enemy_projectile)) {
 // Gravity, directed straight downwards
 part_type_gravity(global.pt_enemy_particle, 0.05, 270);
 
+// Randomize the game
+randomize();
 
+room_goto(rm_pond);
 
+enum game_states {
+	playing,
+	paused,
+}
 
+global.game_state = game_states.playing;

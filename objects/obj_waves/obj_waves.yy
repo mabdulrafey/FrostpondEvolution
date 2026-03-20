@@ -31,7 +31,9 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"current_wave","filters":[],"listItems":[],"multiselect":false,"name":"current_wave","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"spawning","filters":[],"listItems":[],"multiselect":false,"name":"spawning","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
-    {"$GMObjectProperty":"v2","%Name":"score_total","filters":[],"listItems":[],"multiselect":false,"name":"score_total","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"experience","filters":[],"listItems":[],"multiselect":false,"name":"experience","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"level","filters":[],"listItems":[],"multiselect":false,"name":"level","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"level_up_threshold","filters":[],"listItems":[],"multiselect":false,"name":"level_up_threshold","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
@@ -41,5 +43,5 @@
     "path":"sprites/spr_spawner/spr_spawner.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

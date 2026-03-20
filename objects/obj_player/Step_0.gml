@@ -1,3 +1,20 @@
+// Checks for pause
+if (global.game_state != game_states.playing) {
+	if (!paused) {
+		base_vspeed = vspeed;
+		base_hspeed = hspeed;
+		vspeed = 0;
+		hspeed = 0;
+		paused = true;
+	}
+	exit;
+} else {
+	if (paused) {
+		vspeed = base_vspeed;
+		hspeed = base_hspeed;
+		paused = false;
+	}
+}
 // --- MOVEMENT & PHYSICS ---
 
 // Speed acceleration and deceleration
@@ -55,11 +72,12 @@ if (moving) {
 		vspeed = lengthdir_y(top_speed, image_angle);
 	}
 	
+	// Player animation begins when moving
+	image_speed = hop_speed / 2; 
 } else { 
 	// Stop animation and reset to the first frame when still
 	image_speed = 0;
 	image_index = 0;
-	
 } 
 
 // Keeps the player within screen bounds
@@ -71,11 +89,21 @@ if (iframes_cooldown > 0) {
 	iframes_cooldown--;
 }
 
+// Fades the damage_flash shader every step
+if (damage_flash_timer > 0) {
+	damage_flash_timer--
+	
+	damage_flash = damage_flash_timer / 30 //Using 30 frames for half a second
+} else {
+	damage_flash = 0
+}
+
+
 // --- EVOLUTION LOGIC ---
 
 // Stage 1: Evolve to Tadpole with Legs at 70 points
-if (obj_waves.score_total >= 70 && evolve == 0) {
-	evolve = 1;
+if (obj_waves.level >= 5 && evolve == 0) {
+	evolve = 1
 	sprite_index = spr_player_legs; 
 	
 	// Set the message to show on screen
@@ -85,18 +113,12 @@ if (obj_waves.score_total >= 70 && evolve == 0) {
 	show_debug_message("Evolved to Stage 1!");
 }
 
-// Countdown the evolution message timer
-if (evolution_timer > 0) {
-	evolution_timer--;
-} else {
-	evolution_message = ""; 
-}
- // Example Stage 2: Evolve to Frog at 300 points
-if (obj_waves.score_total >= 300 && evolve == 1) {
-	evolve = 2;
+ // Example Stage 2: Evolve to Frog at level 10
+if (obj_waves.level >= 10 && evolve == 1) {
+	evolve = 2
 	sprite_index = spr_player_frog;
 	
-	evolution_message = "EVOLVED TO FULL FROG!\nULTIMATE POWER UNLOCKED";
+	evolution_message = "EVOLVED TO FROG!";
 	evolution_timer = game_get_speed(gamespeed_fps) * 3;
 	
 	show_debug_message("Evolved to Stage 2!");
