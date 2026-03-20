@@ -54,6 +54,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_damage","path":"scripts/scr_damage/scr_damage.yy",},},
     {"id":{"name":"scr_spawning","path":"scripts/scr_spawning/scr_spawning.yy",},},
+    {"id":{"name":"shd_damage_flash","path":"shaders/shd_damage_flash/shd_damage_flash.yy",},},
     {"id":{"name":"spr_enemy_fish","path":"sprites/spr_enemy_fish/spr_enemy_fish.yy",},},
     {"id":{"name":"spr_enemy_flower","path":"sprites/spr_enemy_flower/spr_enemy_flower.yy",},},
     {"id":{"name":"spr_enemy_frog_legs","path":"sprites/spr_enemy_frog_legs/spr_enemy_frog_legs.yy",},},

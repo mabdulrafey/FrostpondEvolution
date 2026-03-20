@@ -8,4 +8,7 @@ hp = max_hp
 
 // Starting alarm[0]
 alarm[0] = projectile_cooldown
-hp = max_hp
+
+// Initializing the damage_flash shader variables
+damage_flash = 0
+damage_flash_timer = 0

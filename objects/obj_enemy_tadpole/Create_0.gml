@@ -12,6 +12,10 @@ if (instance_exists(obj_player)) {
 // Creating an instance variable for enemy health using the max_hp variable def
 hp = max_hp
 	
+// Initializing the damage_flash shader variables
+damage_flash = 0
+damage_flash_timer = 0
+
 // Getting the hop Animation Curve and the first channel
 hop_curve_value = 0;
 hop_curve = animcurve_get(ac_hop)

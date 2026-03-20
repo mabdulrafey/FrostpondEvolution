@@ -71,6 +71,15 @@ if (iframes_cooldown > 0) {
 	iframes_cooldown--;
 }
 
+// Fades the damage_flash shader every step
+if (damage_flash_timer > 0) {
+	damage_flash_timer--
+	
+	damage_flash = damage_flash_timer / 30 //Using 30 frames for half a second
+} else {
+	damage_flash = 0
+}
+
 // --- EVOLUTION LOGIC ---
 
 // Stage 1: Evolve to Tadpole with Legs at 70 points
