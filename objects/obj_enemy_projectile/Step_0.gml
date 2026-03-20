@@ -3,6 +3,7 @@ if (global.game_state != game_states.playing) {
 		base_vspeed = vspeed;
 		base_hspeed = hspeed;
 		vspeed = 0;
+		hspeed = 0;
 		paused = true;
 	}
 	exit;

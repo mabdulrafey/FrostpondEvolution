@@ -2,7 +2,7 @@
 alarm[0] = spit_cooldown
 
 // Checks for upgrading
-if (instance_exists(obj_upgrade)) {
+if (instance_exists(obj_upgrade1)) {
 	exit;	
 }
 
