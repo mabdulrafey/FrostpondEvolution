@@ -51,7 +51,7 @@
     {"id":{"name":"obj_player_tongue","path":"objects/obj_player_tongue/obj_player_tongue.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_waves","path":"objects/obj_waves/obj_waves.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"rm_pond","path":"rooms/rm_pond/rm.yy",},},
     {"id":{"name":"scr_damage","path":"scripts/scr_damage/scr_damage.yy",},},
     {"id":{"name":"scr_spawning","path":"scripts/scr_spawning/scr_spawning.yy",},},
     {"id":{"name":"spr_enemy_fish","path":"sprites/spr_enemy_fish/spr_enemy_fish.yy",},},
@@ -70,7 +70,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_pond","path":"rooms/rm_pond/rm_pond.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
