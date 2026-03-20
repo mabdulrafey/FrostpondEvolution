@@ -1,6 +1,3 @@
-current_wave = 0;
-score_total = 0;
-
 // Kick off the first wave after 3 seconds
 alarm[0] = game_get_speed(gamespeed_fps) * 3;
 
@@ -9,3 +6,5 @@ if (instance_exists(obj_player)) {
     obj_player.evolution_message = "WAVE " + string(current_wave + 1) + " STARTING!";
     obj_player.evolution_timer = game_get_speed(gamespeed_fps) * 2;
 }
+
+paused = false;

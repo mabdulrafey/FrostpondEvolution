@@ -9,3 +9,5 @@ hp = max_hp
 // Starting alarm[0]
 alarm[0] = projectile_cooldown
 hp = max_hp
+
+paused = false;
