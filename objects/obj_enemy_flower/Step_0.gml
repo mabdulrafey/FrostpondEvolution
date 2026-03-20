@@ -1,3 +1,19 @@
+if (global.game_state != game_states.playing) {
+	if (!paused) {
+		base_vspeed = vspeed;
+		base_hspeed = hspeed;
+		vspeed = 0;
+		paused = true;
+	}
+	exit;
+} else {
+	if (paused) {
+		vspeed = base_vspeed;
+		hspeed = base_hspeed;
+		paused = false;
+	}
+}
+
 // Making the sprite face the player
 // If the player object exists
 if (instance_exists(obj_player)) {
@@ -39,5 +55,10 @@ y = clamp(y, sprite_height / 2, room_height-sprite_height / 2)
 // Reducing the iframes cooldown every step
 if (iframes_cooldown > 0) {
 	iframes_cooldown--
+}
+
+if (obj_waves.level > 10 && !(my_value > 40)) {
+	my_value *= 3;
+	projectile_cooldown = 80;
 }
 

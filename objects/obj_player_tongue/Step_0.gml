@@ -1,3 +1,8 @@
+// Checks for upgrading
+if (instance_exists(obj_upgrade1)) {
+	exit;	
+}
+
 // Making the tongue object follow the player as they move
 // For the position of the tongue
 x = obj_player.x + lengthdir_x(obj_player.sprite_width / 2, enemy_angle)

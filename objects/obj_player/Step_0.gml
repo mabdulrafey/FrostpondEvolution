@@ -1,3 +1,20 @@
+// Checks for pause
+if (global.game_state != game_states.playing) {
+	if (!paused) {
+		base_vspeed = vspeed;
+		base_hspeed = hspeed;
+		vspeed = 0;
+		hspeed = 0;
+		paused = true;
+	}
+	exit;
+} else {
+	if (paused) {
+		vspeed = base_vspeed;
+		hspeed = base_hspeed;
+		paused = false;
+	}
+}
 // --- MOVEMENT & PHYSICS ---
 
 // Speed acceleration and deceleration
@@ -74,8 +91,7 @@ if (iframes_cooldown > 0) {
 // --- EVOLUTION LOGIC ---
 
 // Stage 1: Evolve to Tadpole with Legs at 70 points
-if (obj_waves.score_total >= 70 && evolve == 0) {
-	evolve = 1;
+if (obj_waves.level >= 5) {
 	sprite_index = spr_player_legs; 
 	
 	// Set the message to show on screen
@@ -91,9 +107,8 @@ if (evolution_timer > 0) {
 } else {
 	evolution_message = ""; 
 }
- // Example Stage 2: Evolve to Frog at 300 points
-if (obj_waves.score_total >= 300 && evolve == 1) {
-	evolve = 2;
+ // Example Stage 2: Evolve to Frog at level 10
+if (obj_waves.level >= 10) {
 	sprite_index = spr_player_frog;
 	
 	evolution_message = "EVOLVED TO FULL FROG!\nULTIMATE POWER UNLOCKED";

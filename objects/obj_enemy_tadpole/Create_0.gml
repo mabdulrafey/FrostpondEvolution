@@ -11,11 +11,5 @@ if (instance_exists(obj_player)) {
 
 // Creating an instance variable for enemy health using the max_hp variable def
 hp = max_hp
-	
-// Getting the hop Animation Curve and the first channel
-hop_curve_value = 0;
-hop_curve = animcurve_get(ac_hop)
-hop_channel = animcurve_get_channel(hop_curve, 0)
 
-// No animations when it first spawns
-image_speed = 0 
+paused = false;
