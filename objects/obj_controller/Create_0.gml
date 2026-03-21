@@ -94,8 +94,6 @@ part_type_gravity(global.pt_enemy_particle, 0.05, 270);
 // Randomize the game
 randomize();
 
-room_goto(rm_pond);
-
 enum game_states {
 	playing,
 	paused,

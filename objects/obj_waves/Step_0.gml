@@ -3,6 +3,8 @@ if (global.game_state != game_states.playing) {
 	exit;
 }
 
+show_debug_message("Enemies remaining: " + string(instance_number(obj_enemy)));
+
 if (!instance_exists(obj_enemy) && alarm[0] <= 0) {
     
     // --- ANNOUNCE NEW WAVE ---

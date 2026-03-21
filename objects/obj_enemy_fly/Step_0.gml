@@ -15,6 +15,8 @@ if (global.game_state != game_states.playing) {
 	}
 }
 
+image_speed = 0.25
+
 // Preventing enemies from clipping into eachother
 with (obj_enemy) { // Runs this code once for very existing enemy
     if (id != other.id) { // Using id to easily check the other enemy instances
@@ -53,6 +55,7 @@ if (state == "enterScreen") {
 	
 	var camera_point_direction = point_direction(x, y, target_camera_x, target_camera_y)
 	direction = camera_point_direction
+	image_angle = direction
 	speed = 3 // Get to the camera point faster
 	
 	// Getting all the camera values
@@ -88,6 +91,7 @@ if (state == "wandering") {
 	
 	// Some final randomness to the direction of the fly
 	direction += irandom_range(-5, 5)
+	image_angle = direction
 
 	// Keeping a slow speed for the wandering fly
 	speed = 1
