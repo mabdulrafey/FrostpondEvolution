@@ -57,8 +57,18 @@ if (iframes_cooldown > 0) {
 	iframes_cooldown--
 }
 
-if (obj_waves.level > 10 && !(my_value > 40)) {
-	my_value *= 3;
+// Fades the damage_flash shader every step
+if (damage_flash_timer > 0) {
+	damage_flash_timer--
+	
+	damage_flash = damage_flash_timer / 30 //Using 30 frames for half a second
+} else {
+	damage_flash = 0
+}
+
+
+if (obj_waves.level > 10 && !(score_value > 40)) {
+	score_value *= 3;
 	projectile_cooldown = 80;
 }
 

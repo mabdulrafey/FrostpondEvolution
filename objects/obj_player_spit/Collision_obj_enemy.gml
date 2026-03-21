@@ -6,7 +6,7 @@ other.hp -= spit_damage;
 if (other.hp <= 0) {
     // Add to score only when the enemy actually dies
     if (instance_exists(obj_waves)) {
-        obj_waves.experience += other.my_value;
+        obj_waves.experience += other.score_value;
     }
     
     // Destroy the enemy

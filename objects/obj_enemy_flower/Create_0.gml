@@ -1,5 +1,3 @@
-my_value = 40;
-
 // Enemy flower animation begins when it is created
 image_speed = 0.1
 
@@ -8,6 +6,9 @@ hp = max_hp
 
 // Starting alarm[0]
 alarm[0] = projectile_cooldown
-hp = max_hp
+
+// Initializing the damage_flash shader variables
+damage_flash = 0
+damage_flash_timer = 0
 
 paused = false;

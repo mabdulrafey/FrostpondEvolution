@@ -73,7 +73,7 @@ if (moving) {
 	}
 	
 	// Player animation begins when moving
-	image_speed = hop_speed; 
+	image_speed = hop_speed / 2; 
 } else { 
 	// Stop animation and reset to the first frame when still
 	image_speed = 0;
@@ -89,11 +89,21 @@ if (iframes_cooldown > 0) {
 	iframes_cooldown--;
 }
 
+// Fades the damage_flash shader every step
+if (damage_flash_timer > 0) {
+	damage_flash_timer--
+	
+	damage_flash = damage_flash_timer / 30 //Using 30 frames for half a second
+} else {
+	damage_flash = 0
+}
+
+
 // --- EVOLUTION LOGIC ---
 
 // Stage 1: Evolve to Tadpole with Legs at 70 points
-if (obj_waves.level >= 5 && !lvl5_message) {
-	lvl5_message = true;
+if (obj_waves.level >= 5 && evolve == 0) {
+	evolve = 1
 	sprite_index = spr_player_legs; 
 	
 	// Set the message to show on screen
@@ -103,18 +113,12 @@ if (obj_waves.level >= 5 && !lvl5_message) {
 	show_debug_message("Evolved to Stage 1!");
 }
 
-// Countdown the evolution message timer
-if (evolution_timer > 0) {
-	evolution_timer--;
-} else {
-	evolution_message = ""; 
-}
  // Example Stage 2: Evolve to Frog at level 10
-if (obj_waves.level >= 10 && !lvl10_message) {
-	lvl10_message = true;
+if (obj_waves.level >= 10 && evolve == 1) {
+	evolve = 2
 	sprite_index = spr_player_frog;
 	
-	evolution_message = "EVOLVED TO FULL FROG!\nULTIMATE POWER UNLOCKED";
+	evolution_message = "EVOLVED TO FROG!";
 	evolution_timer = game_get_speed(gamespeed_fps) * 3;
 	
 	show_debug_message("Evolved to Stage 2!");
