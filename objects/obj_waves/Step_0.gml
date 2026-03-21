@@ -41,4 +41,7 @@ if (experience >= level_up_threshold || keyboard_check_pressed(vk_enter)) {
 		level_up_threshold += level_up_threshold/4;
 	}
 	level++;
+	if (level == 15) {
+		instance_create_depth(camera_x, camera_y, -150, obj_win)
+	}
 }
