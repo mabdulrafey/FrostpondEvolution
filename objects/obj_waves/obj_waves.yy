@@ -44,5 +44,5 @@
     "path":"sprites/spr_spawner/spr_spawner.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

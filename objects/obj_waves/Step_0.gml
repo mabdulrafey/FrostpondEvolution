@@ -5,18 +5,20 @@ if (global.game_state != game_states.playing) {
 
 show_debug_message("Enemies remaining: " + string(instance_number(obj_enemy)));
 
+// Added '&& alarm[0] == -1' to ensure this only triggers once
 if (!instance_exists(obj_enemy) && alarm[0] <= 0) {
     
-    // --- ANNOUNCE NEW WAVE ---
-	// This sends the wave info to the player's screen message
-	if (instance_exists(obj_player)) {
-		obj_player.evolution_message = "WAVE " + string(current_wave + 1) + " STARTING!";
-		obj_player.evolution_timer = game_get_speed(gamespeed_fps) * 2; // Show for 2 seconds
-	}
 	current_wave++;
 	
-    // Set the timer for the next spawn
-    // The delay stays 5 seconds, but you could even make this shorter as waves go up!
+    if (alarm[0] == -1) {
+    obj_player.evolution_message = "WAVE " + string(current_wave + 1) + " STARTING!";
+    obj_player.evolution_timer = game_get_speed(gamespeed_fps) * 2; // Show for 2 seconds
+	}
+    
+    
+    // 3. START THE SPAWN TIMER
+    // Setting this to a positive number immediately prevents the 'if' above from 
+    // looping again on the next frame.
     alarm[0] = game_get_speed(gamespeed_fps) * 3; 
 }
 

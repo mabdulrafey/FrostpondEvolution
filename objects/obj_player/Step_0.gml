@@ -108,7 +108,7 @@ if (obj_waves.level >= 5 && evolve == 0) {
 	
 	// Set the message to show on screen
 	evolution_message = "EVOLVED TO TADPOLE WITH LEGS!\nTONGUE UNLOCKED";
-	evolution_timer = game_get_speed(gamespeed_fps) * 3; // Message lasts 3 seconds
+	evolution_timer = game_get_speed(gamespeed_fps) * 2; // Message lasts 2 seconds
 	
 	show_debug_message("Evolved to Stage 1!");
 }

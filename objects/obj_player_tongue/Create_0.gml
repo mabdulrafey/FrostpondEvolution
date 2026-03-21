@@ -4,6 +4,7 @@ direction = image_angle
 tongue_damage = obj_player.tongue_damage
 tongue_punch_through = obj_player.tongue_punch_through
 tongue_range = obj_player.tongue_range
+audio_play_sound(tongue_sound, 1, false);
 
 
 // Controlling the extending and retracting of the tongue

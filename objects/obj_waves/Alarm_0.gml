@@ -1,3 +1,5 @@
+
+
 // --- INFINITE SCALING LOGIC ---
 
 // 1. Basic Tadpoles: Start with 2-4, add 1 every wave
@@ -47,3 +49,5 @@ if (current_wave >= 10) {
 	var frog_count = 1 + floor(current_wave / 3) // Adds 4 frogs at first, then 1 more every 3 waves
 	scr_spawning(frog_count, obj_enemy_frog)
 }
+
+obj_player.evolution_message = "";
