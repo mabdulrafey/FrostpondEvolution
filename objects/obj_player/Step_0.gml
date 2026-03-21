@@ -92,7 +92,8 @@ if (iframes_cooldown > 0) {
 // --- EVOLUTION LOGIC ---
 
 // Stage 1: Evolve to Tadpole with Legs at 70 points
-if (obj_waves.level >= 5) {
+if (obj_waves.level >= 5 && !lvl5_message) {
+	lvl5_message = true;
 	sprite_index = spr_player_legs; 
 	
 	// Set the message to show on screen
@@ -109,7 +110,8 @@ if (evolution_timer > 0) {
 	evolution_message = ""; 
 }
  // Example Stage 2: Evolve to Frog at level 10
-if (obj_waves.level >= 10) {
+if (obj_waves.level >= 10 && !lvl10_message) {
+	lvl10_message = true;
 	sprite_index = spr_player_frog;
 	
 	evolution_message = "EVOLVED TO FULL FROG!\nULTIMATE POWER UNLOCKED";

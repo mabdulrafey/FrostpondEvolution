@@ -5,6 +5,8 @@ max_hp = 200
 
 evolution_message = "";
 evolution_timer = 0;
+lvl5_message = false;
+lvl10_message = false;
 
 // Player animation will not play while they are still
 image_speed = 0
