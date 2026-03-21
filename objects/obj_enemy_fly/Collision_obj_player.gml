@@ -1,0 +1,1 @@
+// Do nothing when colliding with player

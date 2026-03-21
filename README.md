@@ -24,14 +24,14 @@ Cheat Codes:
 
 Graduate Features (Graduate Student: Ayman Kassem):
   Advanced Features:
-    - Particles:
+    1) Particles:
         Two particle systems were implemented, both of which were for the projectile attacks
         to give visual feedback of the collision. For the player's spit attack, it creates a short, dark green
         acidic splash particle on impact. For the enemy flower's projectile attack, it creates a yellow acidic
         splash when it collides with the player. Both of these particle systems were created through GML code
         in the obj_controller object's Create Event. I used the Particle systems editor to configure the particles the way
         I desired, but was unsure how to properly implement them into the room, so I configured it as code instead.
-    - Animation Curve:
+    2) Animation Curve:
         Originally, the Draw Event of the obj_enemy_tadpole and obj_enemy_tadpole_legs utilized the sine function
         to draw a hopping animation for them. Using the Animation Curve editor, I created a simple normal distribution
         graph, and mapped the Draw Event to that instead of using sine to draw the hopping for the enemy frog type.
@@ -44,6 +44,16 @@ Graduate Features (Graduate Student: Ayman Kassem):
   Inheritence:
     The main case of inheritance found throughout the game is for the enemy types. All enemies inherit from
     obj_enemy to get their base state values and Step Event to follow the player. 
+
+  Shaders:
+    Apply a light red tint shader onto enemies and the player in the scr_damage function when they are damaged. This adds a visual cue
+    that something has been damaged.
+
+  AI:
+    Although it's at a low level, the obg_enemy_fly enemy has two states. First is the "enterScreen" state, which will make the fly rush into the screen
+    at a random point near the center of the screen. This is so the player can spot the fly, and it's not wandering aimlessly in the map. It will then
+    enter its "wandering" state, in which it will randomly move about in random directions. Its movement is intenionally made smoother like an actual
+    fly so it would be harder for the player to kill.
 
     
 

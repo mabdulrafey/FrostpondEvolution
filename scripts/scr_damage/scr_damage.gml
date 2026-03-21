@@ -7,11 +7,19 @@ function inflict_damage(target, damage) {
 	
 		// Give the target iframes again by restarted the iframes cooldown
 		target.iframes_cooldown = target.iframes_max_cooldown
-	
+		
+		
 		// If the target's health is below 0, destroy the target
 		if (target.hp <= 0) {
+			if (instance_exists(obj_waves)) {
+		       obj_waves.experience += target.score_value
+		    }
 			with (target) instance_destroy();
+		} else { // Apply the damage flash shader
+			with(target) {
+				target.damage_flash = 1
+				target.damage_flash_timer = 60 // 60 frames for 1 second total
+			}
 		}
-	
 	}
 }

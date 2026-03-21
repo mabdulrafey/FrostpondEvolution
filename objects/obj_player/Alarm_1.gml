@@ -3,7 +3,7 @@ alarm[1] = tongue_cooldown
 
 // --- EVOLUTION CHECK ---
 // Only run the search and attack logic if the player has evolved
-if (evolve >= 1) {
+if (obj_waves.level >= 5) {
 
     // Searching for the nearest enemy to the player
     var enemy = instance_nearest(x, y, obj_enemy)
@@ -14,9 +14,9 @@ if (evolve >= 1) {
         if (distance_to_enemy <= tongue_range) {
             var angle_to_enemy = point_direction(x, y, enemy.x, enemy.y)
             
-            // Checking if the enemy is in a 60 degree cone in front of the player
+            // Checking if the enemy is in a 30 degree cone in front of the player
 			// Not needed though when doing omni-directional hits
-            // (abs(angle_difference(image_angle, angle_to_enemy)) < 60) {
+            //if (abs(angle_difference(image_angle, angle_to_enemy)) < 30) {
                 
                 // Making sure the tongue attack isn't already active
                 if (instance_exists(obj_player_tongue) == false) {
@@ -30,10 +30,6 @@ if (evolve >= 1) {
 					tongue.direction = angle_to_enemy
 					tongue.image_angle = angle_to_enemy
 
-
-                    tongue.tongue_range = tongue_range + tongue_range_upgrade
-                    tongue.tongue_punch_through = tongue_punch_through + tongue_punch_through_upgrade
-                    tongue.tongue_damage = tongue_damage + tongue_damage_upgrade
                 }
             //}
         }
