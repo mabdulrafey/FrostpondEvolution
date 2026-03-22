@@ -44,4 +44,3 @@ if (experience >= level_up_threshold || keyboard_check_pressed(vk_enter)) {
 	}
 	level++;
 }
-
