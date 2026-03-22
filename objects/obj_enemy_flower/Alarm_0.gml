@@ -1,6 +1,10 @@
 // Resetting alarm 0
 alarm[0] = projectile_cooldown
 
+if (global.game_state == game_states.paused || instance_exists(obj_upgrade1)) {
+    exit;    
+}
+
 // Searching for the nearest enemy to the player
 var player = instance_nearest(x, y, obj_player)
 

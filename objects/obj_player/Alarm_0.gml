@@ -1,6 +1,9 @@
 // Resetting alarm 0
 alarm[0] = spit_cooldown
 
+if (global.game_state == game_states.paused || instance_exists(obj_upgrade1)) {
+    exit;    
+}
 // Checks for upgrading
 if (instance_exists(obj_upgrade1)) {
 	exit;	

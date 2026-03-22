@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"enemty_projectile",
+  "%Name":"sound_enemy_projectile",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":0.6866213,
   "exportDir":"",
-  "name":"enemty_projectile",
+  "name":"sound_enemy_projectile",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"enemty_projectile.wav",
+  "soundFile":"sound_enemy_projectile.wav",
   "volume":1.0,
 }
